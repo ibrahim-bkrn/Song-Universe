@@ -1,5 +1,4 @@
 ﻿# Song-Universe
-
 1. Différence entre HTML et CSS
 HTML structure le contenu d’une page web (titres, paragraphes, images), tandis que CSS gère l’apparence visuelle (couleurs, tailles, positionnement). HTML est le squelette, CSS est le design.
 
@@ -29,3 +28,30 @@ Convertir les medias avec des formats optimisé pour le web tel que webP pour le
 
 10. Fonctionnement des media queries
 Les media queries appliquent des styles conditionnels en fonction de la taille de l’écran (@media (max-width: 768px)). Elles sont indispensables pour le design responsive.
+
+/*---------------------------------------------------------------------------------------------------------
+Explication du squellette HTML :
+
+Le squelette HTML se divise en trois grandes parties :
+
+Doctype et structure principale :
+- Le <!DOCTYPE html> spécifie que la page utilise HTML5, la norme actuelle.
+- La balise <html> enveloppe tout le document, et l'attribut lang="en" indique que le contenu est en anglais.
+  
+En-tête (<head>) :
+  Métadonnées :
+- meta charset="UTF-8" : Définit l'encodage des caractères pour une compatibilité universelle.
+- meta name="viewport" : Permet un affichage responsive sur tous les écrans.
+- meta name="description" : Fournit une description de la page pour le SEO.
+  Ressources :
+- Le fichier CSS externe (styles.css) et les polices Google sont intégrés ici.
+- Titre : Définit le texte affiché dans l'onglet du navigateur.
+
+Corps de la page (<body>)
+- <header> : Contient la barre de navigation avec un logo, des liens, et un bouton pour contacter le photographe.
+- <main> : Divisé en plusieurs sections :
+Présentation (<section id="firstSection">) : Un titre et une phrase d'accroche.
+Galerie (<section id="secondSection">) : Montre des réalisations avec des images et des dates.
+À propos (<section id="thirdSection">) : Une description personnelle et un portrait.
+Formulaire de contact (<section id="contact">) : Permet aux utilisateurs de laisser un message via un formulaire interactif.
+- <footer> : Mentionne les droits réservés.
