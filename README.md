@@ -29,7 +29,8 @@ Convertir les medias avec des formats optimisé pour le web tel que webP pour le
 10. Fonctionnement des media queries
 Les media queries appliquent des styles conditionnels en fonction de la taille de l’écran (@media (max-width: 768px)). Elles sont indispensables pour le design responsive.
 
-/*---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+
 Explication du squellette HTML :
 
 Le squelette HTML se divise en trois grandes parties :
