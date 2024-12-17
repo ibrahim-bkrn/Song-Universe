@@ -1,0 +1,538 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Hammersmith One";
+}
+
+h2{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    gap: 90px;
+    background: #F1D302;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    text-transform: uppercase;
+    gap: 90px;
+    font-size: 25px;
+}
+
+header nav ul img{
+    display: none;
+}
+
+header nav ul li:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+/* ** MAIN ** */
+/* Premiere section */
+
+#firstSection{
+    background-image: url(drive-download-20241205T153521Z-001/photos/cover.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding-top: 237px;
+    padding-bottom: 90px;
+}
+
+#firstSection h1{
+    font-size: 48px;
+    padding-bottom: 110px;
+    font-weight: 400;
+}
+
+#firstSection button{
+    all: unset;
+    background: #C1292E;
+    font-size: 20px;
+    padding-inline: 110px;
+    padding-block: 20px;
+}
+
+/* Deuxieme section */
+
+#secondSection{
+    color: white;
+    background: #161925;
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 22px;
+}
+
+#secondSection p{
+    font-size: 32px;
+}
+
+/* Troisieme section LES COLLECTIONS */
+
+#thirdSection {
+    padding-left: 80px;
+    padding-top: 37px;
+}
+
+#thirdSection h2{
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 24px;
+}
+
+#thirdSection section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#thirdSection section div{
+    position: relative;
+}
+
+#thirdSection section div img{
+    transition: filter 0.3 ease;
+    cursor: pointer;
+}
+
+#thirdSection section div img:hover{
+    filter: brightness(50%);
+}
+
+#thirdSection section div h3 {
+    position: absolute;
+    color: rgb(244, 244, 244);
+    text-transform: uppercase;  
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    left: 30%;
+    top: 45%;
+    z-index: 5;
+    opacity: 0; /* Caché par défaut */
+    transition: opacity 0.2s ease; /* Transition douce pour l'apparition */
+}
+
+#thirdSection section div:nth-child(2) h3{
+    left: 35%;
+}
+
+#thirdSection section div img:hover + h3 {
+    opacity: 1; /* Visible au survol de l'image */
+}
+
+
+/* Quatrième section AUDIOS */
+#fourthSection {
+    padding-left: 80px;
+    padding-top: 45px;
+    display: grid;
+    gap: 23px;
+    width: 90%;
+}
+
+#fourthSection h2{
+    font-family: "Hammersmith One";
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#fourthSection article{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+#fourthSection article div{
+    position: relative;
+    color: white;
+    background-color: #235789;
+    font-family: "Hammersmith One";
+    font-size: 30px;
+    font-weight: 300;
+    padding-left: 56px;
+    border-radius: 0px 15px 15px 0px;
+    padding-top: 17px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+#fourthSection article div h3{
+    padding-bottom: 31px;
+}
+
+#fourthSection article div audio{
+    position: absolute; /* Permet de le positionner précisément */
+    bottom: 31px; /* Le place tout en bas de la div */
+    width: 80%;
+    font-family: "Hammersmith One";
+}
+
+/* Cinquième Section VIDEOS */
+
+#fifthSection {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 60px;
+}
+
+#fifthSection h2{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+#fifthSection section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 63px ;
+}
+
+#fifthSection section article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fifthSection section article video{
+    width: 100%;
+    object-fit: fill;
+}
+
+#fifthSection section article h3{
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Sixième section ARTISTES */
+
+#sixthSection{
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 100px;
+}
+
+#sixthSection h2{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+#sixthSection section{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 colonnes */
+    margin: 0 auto;
+    gap: 20px ; /* Espacement entre les images */
+}
+
+#sixthSection section img{
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#sixthSection section img:hover{
+    transform: scale(1.1);
+}
+
+/* Septième Section A PROPOS */
+
+#seventhSection{
+    padding-top: 90px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+#seventhSection h2{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+#seventhSection h3{
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#seventhSection p{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal
+}
+
+/* LE FORMULAIRE DERNIERE SECTION */
+
+#lastSection{
+    background: #235789;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 146px;
+
+}
+
+#lastSection h2{
+    padding-bottom: 10px;
+}
+
+#lastSection p{
+    padding-bottom: 50px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#lastSection form{
+    margin: 0 auto;
+    display: grid;
+    width: 60%;
+    gap: 20px;
+}
+
+#lastSection form div{
+    display: grid;
+    text-align: left;
+}
+
+#lastSection form div label{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#lastSection form div input, textarea{
+    padding: 15px;
+}
+
+#lastSection form input:nth-child(3) {
+    all: unset;
+    background-color: #DFE1E1;
+}
+
+#lastSection form button{
+    all: unset;
+    font-family: "Hammersmith One";
+    color: #161925;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    padding-inline: 50px;
+    background-color: #DFE1E1;
+    width: 20%;
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#lastSection form button:hover{
+    background-color: #7C090D;
+    color: white;
+}
+
+/* Footer */
+footer{
+    background-color: #F1D302;
+    padding-top: 20px;
+    text-align: center;
+    color: #000;
+    font-family: "Jersey 10";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+/**/
+
+@media screen and (max-width: 393px) {
+
+    /* header */
+    header nav{
+        padding-left: 20px;
+        gap: 50px;
+    }
+
+    header nav img{
+        width: 70%;
+    }
+
+    header nav ul img{
+        display: block;
+    }
+
+    header nav ul li{
+        display: none;
+    }
+
+    /* premiere section */
+    #firstSection{
+        padding-top: 100px;
+    }
+
+    #firstSection h1{
+        padding-bottom: 40px;
+        font-size: 44px;
+    }
+
+    /* deuxieme section */
+    #secondSection{
+        padding-inline: 25px;
+    }
+
+    #secondSection p{
+        font-size: 20px;
+    }
+
+    /* troisième section */
+    #thirdSection{
+        padding: 0;
+        padding-inline: 30px;
+        margin-top: 30px;
+    }
+
+    #thirdSection h2{
+        text-align: left;
+    }
+
+    #thirdSection section img{
+        width: 100%;
+    }
+
+    #thirdSection section div img:hover{
+        opacity: 1; /* Visible au survol de l'image */
+    }
+
+    /* quatrième section */
+    #fourthSection{
+        padding: 40px 0;
+        margin-inline: 17px ;
+    }
+
+    #fourthSection article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 90%;
+    } 
+
+    #fourthSection article img{
+        width: 102%;
+    }
+
+    #fourthSection article div audio{
+        width: 70%;
+    }
+
+    #fourthSection article div{
+        width: 90%;
+        padding: 10px 20px;
+        font-size: 15px;
+        height: 250px;
+        border-radius: 0;
+    }
+
+    /* cinquieme section */
+    #fifthSection {
+        padding: 0;
+        padding-inline: 27px;
+    }
+
+    #fifthSection section{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #fifthSection section article video{
+        width: 100%;
+    }
+
+    /* Sixieme section ARTISTE */
+    #sixthSection{
+        padding: 0;
+        margin-top: 70px;
+        padding-inline: 27px;
+    }
+
+    #sixthSection section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #sixthSection section img{
+       width: 157px;
+    }
+
+    /* Septieme section A PROPOS */
+    #seventhSection{
+        padding-inline: 27px;
+    }
+
+    #seventhSection img{
+        width: 100%;
+    }
+
+    #seventhSection h3{
+        margin-bottom: 15px;
+    }
+
+    /* Derniere section FORMULAIRE */
+
+    #lastSection{
+        margin-bottom: 50px;
+    }
+
+    #lastSection h2{
+        font-size: 30px;
+    }
+
+    #lastSection form{
+        width: 80%;
+    }
+
+    /* footer */
+    footer{
+        padding-top:0;
+    }
+
+    footer img{
+        width: 90%;
+    }
+} 
